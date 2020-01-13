@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    position: flex;
+    background-color:#050210 ;
+    
+}
+#krugovi {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color:#050210;
+    text-align: center;
+    margin-left: 530px;
+    margin-top: 150px;
+} 
+
+.krug {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}  
+
+.krugdva {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: black;
+    display:block;
+    margin:25px;
+}
+.krugtri {
+    
+        animation: pulse 1s infinite;
+        background-color:#050210;
+        border-radius: 50%;
+        height:250px;
+        width:250px;
+        position:absolute;
+        display: block;
+        margin:25px;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    
+}
+.krug span {
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:linear-gradient( #fb5dad, #55fb9f, #b97aff);
+}
+.krug span:nth-child(1){
+    filter: blur(5px);
+}
+.krug span:nth-child(2){
+    filter: blur(8px);
+}
+.krug span:nth-child(3){
+    filter: blur(12px);
+}
+.krug span:nth-child(4){
+    filter: blur(50px);
+}
+ 
